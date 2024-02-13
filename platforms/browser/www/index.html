@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Book Catalog App</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div id="app">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#" onclick="showBookList()">Books</a>
+            <a href="#" onclick="showFavorites()">Favorites</a>
+            <a href="#" onclick="showOnlineBooks()">Online Books</a>
+        </div>
+        <div id="homePage">
+            <h1>Welcome to the Book Catalog</h1>
+            <img src="img/book.webp" alt="Book Image" class="bookImage">
+            <p>Explore a curated collection of books in our catalog. Add your favorite books and discover new reads.</p>
+            <button onclick="showAddBookForm()">Add Book</button>
+        </div>
+        <div id="addBookForm" style="display:none;">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter title">
+            <label for="author">Author:</label>
+            <input type="text" id="author" placeholder="Enter author">
+            <button onclick="addBook()">Save</button>
+        </div>
+        <div id="onlineBookList" style="display:none;">
+            <h2>Online Books</h2>
+            <div id="onlineBooks"></div>
+        </div>
+        <div id="bookList"></div>
+        <div id="favoriteList"></div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
+
